@@ -1,0 +1,20 @@
+# include <bits/stdc++.h>
+# define report(args...) return printf(args), void()
+int a[]={0,1,2,-2,-1,1,-1};
+void _() {
+	int n,i;
+	scanf("%d",&n);
+	if(n&1) puts("NO");
+	else {
+		puts("YES");
+		for(i=1;i<=n;i++) printf("%d ",a[(i-1)%6+1]);
+	}
+}
+
+int main() {
+	int T=1;
+//	scanf("%d",&T);
+	while(T--) _();
+	return 0;
+}
+
